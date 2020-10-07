@@ -1,5 +1,11 @@
 {% if site.logo %}
-  <div class="site-logo"></div>
+    <div class="site-branding d-flex flex-v-center">
+        <div class="logo d-flex flex-v-center"><img src="{{ '/assets/images/logo.png' | absolute_url }}" alt="{{ site.name }}"></div>
+        <div class="titles d-flex flex-col">
+            <span class="title">Documentaion</span>
+            <span class="version">Version {{ site.version }}</span>
+        </div>
+    </div>
 {% else %}
-  {{ site.title }}
+    {{ site.title }}
 {% endif %}

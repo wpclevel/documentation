@@ -73,6 +73,14 @@
   justify-content: space-around !important;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-v-center {
+    align-items: center;
+}
+
 // Vertical alignment
 
 .v-align-baseline {
