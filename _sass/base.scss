@@ -21,8 +21,9 @@ body {
   font-family: $body-font-family;
   font-size: inherit;
   line-height: $body-line-height;
-  color: $body-text-color;
+  color: #222;
   background-color: $body-background-color;
+  font-weight: 500;
 }
 
 ol,
@@ -47,15 +48,23 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   font-weight: 500;
   line-height: $body-heading-line-height;
   color: $body-heading-color;
 }
 
+h2 {
+    border-bottom: 1px solid #eee;
+}
+
+h3 + p > img {
+    max-width: 300px
+}
+
 p {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -65,23 +74,18 @@ a {
 
 a:not([class]) {
   text-decoration: none;
-  background-image: linear-gradient($border-color 0%, $border-color 100%);
   background-repeat: repeat-x;
   background-position: 0 100%;
   background-size: 1px 1px;
 
   &:hover {
-    background-image: linear-gradient(
-      rgba($link-color, 0.45) 0%,
-      rgba($link-color, 0.45) 100%
-    );
-    background-size: 1px 1px;
+    text-decoration: underline;
   }
 }
 
 code {
   font-family: $mono-font-family;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   line-height: $body-line-height;
 }
 
@@ -91,7 +95,17 @@ pre {
 }
 
 li {
-  margin: 0.25em 0;
+  margin: 0.25rem 0;
+  > img {
+      max-width: 300px;
+  }
+  > p {
+      margin-top: 0;
+      margin-bottom: 0;
+      > img {
+          margin-top: .5rem;
+      }
+  }
 }
 
 img {

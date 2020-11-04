@@ -15,7 +15,7 @@
   address,
   blockquote,
   .table-wrapper {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
   }
 
   a {
@@ -26,7 +26,7 @@
 
   ul,
   ol {
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
   }
 
   li {
@@ -44,15 +44,15 @@
 
       &::before {
         position: absolute;
-        top: 0.2em;
-        left: -1.6em;
+        top: 0.2rem;
+        left: -1.6rem;
         color: $grey-dk-000;
         content: counter(step-counter);
         counter-increment: step-counter;
         @include fs-3;
 
         @include mq(sm) {
-          top: 0.11em;
+          top: 0.11rem;
         }
       }
 
@@ -67,6 +67,11 @@
         }
       }
     }
+    &#markdown-toc {
+        li::before {
+            display: none;
+        }
+    }
   }
 
   ul {
@@ -75,7 +80,7 @@
     > li {
       &::before {
         position: absolute;
-        margin-left: -1.4em;
+        margin-left: -1.4rem;
         color: $grey-dk-000;
         content: "•";
       }
@@ -104,7 +109,7 @@
   }
 
   h1:first-of-type {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
   }
 
   dl {
@@ -114,7 +119,7 @@
 
   dt,
   dd {
-    margin: 0.25em 0;
+    margin: 0.5rem 0;
   }
 
   dt {
@@ -126,7 +131,7 @@
   }
 
   dd {
-    margin-left: 1em;
+    margin-left: 1rem;
     font-weight: 500;
   }
 
@@ -176,8 +181,8 @@
   h5,
   h6 {
     position: relative;
-    margin-top: 1.5em;
-    margin-bottom: 0.25em;
+    margin-bottom: .5rem;
+    padding-bottom: .25rem;
 
     &:first-child {
       margin-top: -$sp-3;
@@ -187,11 +192,39 @@
     + .table-wrapper,
     + .code-example,
     + .highlighter-rouge {
-      margin-top: 1em;
+      margin-top: 1rem;
     }
+  }
 
-    + p {
-      margin-top: 0;
-    }
+  h1, h2 {
+      margin-top: 1.5rem;
+  }
+
+  h3, h4, h5, h6 {
+      margin-top: 1rem;
+  }
+
+  h1 + p {
+      margin-top: 2rem;
+  }
+
+  h3, h4, h5, h6 {
+      + p {
+          margin-top: 0;
+      }
+  }
+
+  p {
+      + h3,
+      + h4,
+      + h5,
+      + h6 {
+          padding-top: .5rem;
+      }
+  }
+  ol, ul {
+      + h3 {
+          margin-top: 1.5rem;
+      }
   }
 }
