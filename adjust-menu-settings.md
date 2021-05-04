@@ -25,11 +25,11 @@ If you're familiar with Elementor, you will find out adjusting menu appearance i
 3. Advanced tab
 {:toc}
 
-Once you have dragged-and-dropped the "Mega Menu" widget into a column or section, your screen may look like this:
+Once you have dragged-and-dropped the "Elemental Menu" widget into a column or a section, your screen may look like this:
 
 ![Elementor Mega Menu Widget]({{'/assets/images/elementor-mega-menu-widget.png' | absolute_url}})
 
-On the left side is Mega Menu control panel. There're tabs, sections and controls which allow you to adjust menu appearance however you want. Let's get down to the details:
+On the left side is Elemental Menu control panel. There're tabs, sections and controls which allow you to adjust menu appearance however you want. Let's get down to the details:
 
 ## 1. Content tab
 

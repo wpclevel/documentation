@@ -21,7 +21,6 @@
   a {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   ul,
@@ -46,14 +45,17 @@
         position: absolute;
         top: 0.2rem;
         left: -1.6rem;
-        color: $grey-dk-000;
+        color: #6b7899;
         content: counter(step-counter);
         counter-increment: step-counter;
-        @include fs-3;
-
-        @include mq(sm) {
-          top: 0.11rem;
-        }
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #f8faff;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
       }
 
       ol {
@@ -68,6 +70,8 @@
       }
     }
     &#markdown-toc {
+        padding: 1rem 0 1rem 1.5rem;
+        background-color: rgba(39,21,250,.08);     
         li::before {
             display: none;
         }
@@ -132,7 +136,6 @@
 
   dd {
     margin-left: 1rem;
-    font-weight: 500;
   }
 
   .anchor-heading {

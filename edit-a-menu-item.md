@@ -8,7 +8,7 @@ last_modified_date: 2020-10-18T18:54:08+0000
 # Edit A Menu Item
 {: .no_toc}
 
-With smart context aware, Mega Menu Pro clones entire menu context when editing a menu item. It makes everything truly live.
+With smart context aware, Elemental Menu clones entire menu context when editing a menu item. It makes everything truly live.
 
 **Table of Content**
 
@@ -24,7 +24,7 @@ To start editing a menu item, **hover over the menu item** you want to edit and 
 
 ![start editing a menu item]({{ '/assets/images/start-editing-a-menu-item.webp' | absolute_url }})
 
-Then, click on the **Settings icon** at the bottom left (bottom right for RTL languages) to access editor controls and start editing.
+Then, click on the **Settings icon** at the bottom left (bottom right for RTL languages) to access menu item settings and start editing.
 
 ![menu item edit screen]({{ '/assets/images/menu-item-edit-screen.png' | absolute_url }})
 

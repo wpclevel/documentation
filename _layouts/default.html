@@ -51,7 +51,7 @@ layout: table_wrappers
       {% include nav.html %}
     </nav>
     <footer class="site-footer">
-      Copyright &copy; 2020 <a href="https://sarahcoding.com" target="_blank">SarahCoding</a>
+      Copyright &copy; {{ 'now' | date: "%Y" }} <a href="https://wpclevel.com" target="_blank">WP Clevel</a>
     </footer>
   </aside>
   <div class="main" id="top">
@@ -95,7 +95,7 @@ layout: table_wrappers
           <footer>
             {% if site.last_edit_timestamp and site.last_edit_time_format and page.last_modified_date %}
               <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                Last modified: <span class="d-inline-block">{{ page.last_modified_date | date: site.last_edit_time_format }}</span>.
+                Last modified: <span class="d-inline-block">{{ 'now' | date: site.last_edit_time_format }}</span>.
               </p>
             {% endif %}
           </footer>

@@ -13,15 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Mega Menu Pro For Elementor
-description: Documentaion for Mega Menu Pro For Elementor plugin.
+title: Elemental Menu
+description: Documentaion for Elemental Menu plugin.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-name: Mega Menu Pro For Elementor
-version: 1.0.4
-
+name: Elemental Menu
+version: 1.0.7
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+
+# Build settings
+destination: ./elementor-mega-menu
 
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/assets/images/logo.png"
@@ -39,11 +41,6 @@ nav_sort: case_insensitive # default, equivalent to nil
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
-
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-175454919-1
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 #plugins:
 #  - jekyll-seo-tag
